@@ -7,15 +7,89 @@
     <title>Freek</title>
 
     <!-- Favicon link -->
-    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="icon" href="data:image/png;base64,">
+
+    <!-- Font Awesome for the book icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
             height: 100vh;
             overflow: hidden;
+        }
+
+        /* Container for the buttons */
+        .button-container {
+            position: fixed;
+            top: -100px; /* Start off-screen */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px; /* Space between buttons */
+            z-index: 10;
+            transition: top 1s ease; /* Slower and smoother transition */
+        }
+
+        /* Smaller dropdown toggle button */
+        .dropdown-toggle {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(30, 30, 30, 0.9);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 50px;
+            z-index: 10;
+            display: none; /* Hidden by default */
+            transition: opacity 1s ease, top 1s ease; /* Smooth fade-in and movement */
+            opacity: 0; /* Start invisible */
+        }
+
+        .dropdown-toggle:hover {
+            background-color: rgba(50, 50, 50, 0.9);
+        }
+
+        .button-main,
+        .button-icon {
+            background-color: rgba(30, 30, 30, 0.9); /* Darker and more modern grey */
+            color: #fff;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 50px; /* Rounded edges */
+            transition: all 0.3s ease;
+        }
+
+        /* Main Button (The main website) */
+        .button-main {
+            width: auto;
+        }
+
+        /* Icon Button (Book icon) */
+        .button-icon {
+            width: auto;
+            position: relative;
+        }
+
+        /* Remove Hover Effects (No expanding or rotating on hover) */
+        .button-main:hover,
+        .button-icon:hover {
+            background-color: rgba(50, 50, 50, 0.9);
         }
 
         iframe {
@@ -28,97 +102,273 @@
             z-index: 1;
         }
 
-        .overlay {
+        /* Book Icon Animation */
+        .button-icon i {
+            font-size: 1.4em;
             position: absolute;
-            top: -100vh;
-            left: 50%;
-            transform: translateX(-50%);
-            width: auto;
-            max-width: 80%;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            text-align: center;
-            font-size: 2em; /* Doubled font size */
-            transition: top 2s ease, opacity 2s ease;
-            z-index: 1000;
+            transition: opacity 0.6s ease-in-out; /* Slower, smoother transition */
+            opacity: 0;
+        }
+
+        /* Closed book icon is shown by default */
+        .button-icon i.closed-book {
+            opacity: 1;
+        }
+
+        /* Open book icon is hidden by default */
+        .button-icon i.open-book {
+            opacity: 0;
+        }
+
+        /* On hover, the closed book disappears and open book appears */
+        .button-icon:hover i.closed-book {
+            opacity: 0;
+        }
+
+        .button-icon:hover i.open-book {
+            opacity: 1;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 20;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.8s ease, transform 0.8s ease; /* Slow and smooth transition */
+            opacity: 0;
+            transform: translateY(20px); /* Start slightly below */
+        }
+
+        .modal.active {
+            display: flex;
+            opacity: 1; /* Fully visible when active */
+            transform: translateY(0); /* Move to its final position */
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 15px;
+            width: 70%;
+            max-width: 600px;
+            height: auto;
+            max-height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 15px;
-            padding: 20px 40px; /* Adjusted padding */
-            box-sizing: border-box;
-            height: auto;
-            opacity: 0;
-            white-space: normal;
-            word-wrap: break-word;
+            position: relative;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        .overlay.show {
-            top: 5%;
-            opacity: 1;
+        /* Close button for modal */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
         }
 
-        .overlay p {
+        /* Agree button */
+        .agree-button {
+            background: linear-gradient(135deg, #6e8efb, #4a6cf7); /* Gradient background */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .agree-button:hover {
+            background: linear-gradient(135deg, #5a7dee, #3a5af5); /* Darker gradient on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .agree-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .agree-button.agreed {
+            background: linear-gradient(135deg, #4caf50, #45a049); /* Green gradient for "Agreed" state */
             cursor: default;
-            margin: 0;
-            font-size: 25px; /* 2x bigger */
         }
 
-        .overlay a {
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 25px; /* 2x bigger */
-            color: #a6c8ff;
+        .agree-button.agreed:hover {
+            transform: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .overlay a:hover {
-            color: #a6c8ff;
+        .agree-button:disabled {
+            background: #555; /* Disabled state */
+            cursor: not-allowed;
+            opacity: 0.7;
         }
 
-        @media screen and (max-width: 600px) {
-            .overlay {
-                font-size: 12px; /* Scales down for smaller screens */
-                padding: 15px 30px;
-            }
+        /* Modal text styling */
+        .modal-content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+        }
 
-            .overlay p,
-            .overlay a {
-                font-size: 12px;
-            }
+        .modal-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
 
-    <iframe id="Iframe" src="https://freek.to/" width="100%" height="100%" allowfullscreen></iframe>
+    <div class="button-container" id="buttonContainer">
+        <button class="button-main" id="mainWebsiteButton">The main website (click me)</button>
+        <button class="button-icon" id="openModalButton">
+            <!-- Closed book icon -->
+            <i class="fas fa-book closed-book"></i>
+            <!-- Open book icon -->
+            <i class="fas fa-book-open open-book"></i>
+        </button>
+    </div>
 
-    <div class="overlay" id="overlay">
-        <p>Visit the main website for additional content 
-            <a href="https://johnhomn.onrender.com/#" target="_blank">Click Here</a>.
-        </p>
+    <!-- Smaller dropdown toggle button -->
+    <button class="dropdown-toggle" id="dropdownToggle">▼</button>
+
+    <iframe src="https://freek.to/" width="100%" height="100%" allowfullscreen></iframe>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close" id="closeModal">&times;</button>
+            <h2>Important Safety Notice</h2>
+            <p>
+                For your safety, I want to inform you that the movies on this website are available from four sources: Primary, Secondary, Alt Source, and Possibly 4K Source. If the Primary source isn’t working, I recommend trying the Possibly 4K Source instead of the Secondary or Alt Source, as both of those may contain explicit content. Please understand that if you choose to use either of these sources, you do so at your own discretion and responsibility. Your safety is important to me, so please feel free to report any issues using the form located on the main website.
+            </p>
+            <button class="agree-button" id="agreeButton" disabled>I Agree (10)</button>
+        </div>
     </div>
 
     <script>
-        function hideOverlay() {
-            const overlay = document.getElementById('overlay');
-            overlay.style.top = '-100vh';
-            overlay.style.opacity = '0';
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('closeModal');
+        const agreeButton = document.getElementById('agreeButton');
+        const openModalButton = document.getElementById('openModalButton');
+        const mainWebsiteButton = document.getElementById('mainWebsiteButton');
+        const buttonContainer = document.getElementById('buttonContainer');
+        const dropdownToggle = document.getElementById('dropdownToggle');
 
-            setTimeout(() => {
-                overlay.style.display = 'none';
-            }, 2000);
+        // Check if the user has already agreed
+        const hasAgreed = localStorage.getItem('hasAgreed');
+
+        // If the user hasn't agreed, show the modal automatically
+        if (!hasAgreed) {
+            modal.classList.add('active');
+            // Hide the close button until the user agrees
+            closeModal.style.display = 'none';
+        } else {
+            // If the user has agreed, update the button text and style
+            agreeButton.textContent = 'Agreed';
+            agreeButton.classList.add('agreed');
         }
 
-        window.onload = function() {
-            const overlay = document.getElementById('overlay');
-            overlay.classList.add('show');
+        // 10-second timer for the "I Agree" button
+        if (!hasAgreed) {
+            let countdown = 10;
+            const countdownInterval = setInterval(() => {
+                agreeButton.textContent = `I Agree (${countdown})`;
+                countdown--;
+                if (countdown < 0) {
+                    clearInterval(countdownInterval);
+                    agreeButton.textContent = 'I Agree';
+                    agreeButton.disabled = false;
+                }
+            }, 1000);
+        }
 
+        // When the user clicks "I Agree"
+        agreeButton.addEventListener('click', function () {
+            if (!hasAgreed) {
+                // Save the agreement to localStorage
+                localStorage.setItem('hasAgreed', 'true');
+                // Hide the modal
+                modal.classList.remove('active');
+                // Show the close button for future use
+                closeModal.style.display = 'block';
+                // Update the button text and style
+                agreeButton.textContent = 'Agreed';
+                agreeButton.classList.add('agreed');
+            }
+        });
+
+        // Open the modal when the book icon is clicked
+        openModalButton.addEventListener('click', function () {
+            modal.classList.add('active');
+            // Ensure the close button is visible when reopening the modal
+            if (localStorage.getItem('hasAgreed')) {
+                closeModal.style.display = 'block';
+            }
+        });
+
+        // Close the modal when the close button is clicked
+        closeModal.addEventListener('click', function () {
+            modal.classList.remove('active');
+        });
+
+        // Open the main website in a new tab when the button is clicked
+        mainWebsiteButton.addEventListener('click', function () {
+            window.open('https://johnhomn.onrender.com/#', '_blank');
+        });
+
+        // Dropdown functionality
+        let isExpanded = false;
+
+        // Show the button container for 10 seconds on page load
+        setTimeout(() => {
+            buttonContainer.style.top = '20px'; // Drop down
             setTimeout(() => {
-                hideOverlay();
-            }, 10000);
-        };
+                buttonContainer.style.top = '-100px'; // Shrink back up
+                // Fade in the toggle button after the button container has fully retracted
+                dropdownToggle.style.display = 'block'; // Show the toggle button
+                setTimeout(() => {
+                    dropdownToggle.style.opacity = '1'; // Fade in smoothly
+                }, 10); // Small delay to ensure display: block is applied first
+            }, 10000); // 10 seconds
+        }, 1000); // 1 second delay
+
+        // Toggle between expanded and collapsed states
+        dropdownToggle.addEventListener('click', function () {
+            if (isExpanded) {
+                buttonContainer.style.top = '-100px'; // Collapse
+                dropdownToggle.style.top = '20px'; // Move toggle button back up
+                dropdownToggle.textContent = '▼'; // Change icon
+            } else {
+                buttonContainer.style.top = '20px'; // Expand
+                dropdownToggle.style.top = '90px'; // Move toggle button closer to buttons
+                dropdownToggle.textContent = '▲'; // Change icon
+            }
+            isExpanded = !isExpanded;
+        });
     </script>
 
 </body>
