@@ -294,7 +294,7 @@
 
         // 10-second timer for the "I Agree" button
         if (!hasAgreed) {
-            let countdown = 10;
+            let countdown = 5;
             const countdownInterval = setInterval(() => {
                 agreeButton.textContent = `I Agree (${countdown})`;
                 countdown--;
@@ -303,7 +303,7 @@
                     agreeButton.textContent = 'I Agree';
                     agreeButton.disabled = false;
                 }
-            }, 1000);
+            }, 5000);
         }
 
         // When the user clicks "I Agree"
@@ -353,7 +353,7 @@
                 setTimeout(() => {
                     dropdownToggle.style.opacity = '1'; // Fade in smoothly
                 }, 10); // Small delay to ensure display: block is applied first
-            }, 5000); // 10 seconds
+            }, 10000); // 10 seconds
         }, 1000); // 1 second delay
 
         // Toggle between expanded and collapsed states
